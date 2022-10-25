@@ -1,11 +1,23 @@
-# hey
+# Socket examples
 
-This has an example of a non-blocking socket on the server side
+So yeah, this is a thing...
 
-adapted from https://www.demo2s.com/python/python-socket-and-selectors-non-blocking-communication-and-timeouts.html
+## Blocking example from https://www.geeksforgeeks.org/socket-programming-python/
 
-> poetry run python src/Listener.py
+Client connects to the server and gets sent two messages.
 
-then
+in really-simple-socket
 
-> poetry run python src/Client.py
+> poetry run python .\really-simple-socket\server.py
+
+> poetry run python .\really-simple-socket\client.py
+
+## Non-blocking example from https://www.demo2s.com/python/python-socket-and-selectors-non-blocking-communication-and-timeouts.html
+
+Echo server and client, original disconnected when all the messages were sent but this doesn't
+
+in src
+
+> poetry run python .\src\server.py
+
+> poetry run python .\src\client.py
